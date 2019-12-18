@@ -53,7 +53,7 @@ int main()
 
 void getUserMaze(Maze* theMaze)
 {
-	char** field2d = nullptr;
+	//char** field2d = nullptr;
 	char buffer[BUFFER_SIZE];
 	cout << "in getUserMaze()" << endl; //DEBUG
 	clearBuffer();
@@ -63,7 +63,7 @@ void getUserMaze(Maze* theMaze)
 	isValidInput = getHightWidthParams(rows, columns);
 	if(isValidInput)
 	{
-		field2d = new char*[rows];
+		char** field2d = new char*[rows];
 		cout << "enter your maze:" << endl;
 		for (int row = 0; row < rows; ++row)
 		{
@@ -75,8 +75,8 @@ void getUserMaze(Maze* theMaze)
 			}
 			else
 			{
-				cout << "ERROR. Entered row with " << strlen(buffer) << " expected size is " << columns << endl;
-				return;
+				cout << "ERROR! Entered row with " << strlen(buffer) << " expected size is " << columns << endl;
+				exit(1);
 			}
 		}
 		if(validate2DField(rows,columns,field2d))

@@ -205,13 +205,13 @@ bool Maze::solveMaze() //find path from start point to finish point. return true
 	{
 		currentSqr = queue.deQueue();
 		setDataInSquare(currentSqr.getRow(), currentSqr.getColumn(), '$');
-		if (currentSqr.getRow() == numOfRows - 2, currentSqr.getColumn() == numOfColumns - 1) //Check if it's the finish point
+		if (currentSqr.getRow() == numOfRows - 2 && currentSqr.getColumn() == numOfColumns - 1) //Check if it's the finish point
 			return true;
 		if (field[currentSqr.getRow()][currentSqr.getColumn() + 1] == ' ') //Check right
 			queue.enQueue(Square(currentSqr.getRow(), currentSqr.getColumn() + 1, ' '));
 		if (field[currentSqr.getRow() + 1][currentSqr.getColumn()] == ' ')  //Check down
 			queue.enQueue(Square(currentSqr.getRow() + 1, currentSqr.getColumn(), ' '));
-		if (currentSqr.getRow() != 1, currentSqr.getColumn() != 0)  //Check if it's not starting point
+		if (currentSqr.getRow() != 1 && currentSqr.getColumn() != 0)  //Check if it's not starting point
 		{
 			if (field[currentSqr.getRow()][currentSqr.getColumn() - 1] == ' ') //Check left
 				queue.enQueue(Square(currentSqr.getRow(), currentSqr.getColumn() - 1, ' '));

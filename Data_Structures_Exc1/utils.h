@@ -6,6 +6,7 @@
 #define BUFFER_SIZE 100
 
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 void printMenu()
@@ -24,6 +25,7 @@ bool getHightWidthParams(int& rows, int& columns)
 
 	cout << "Maze Width: ";
 	cin >> columns_temp;
+	getchar();
 	if (rows_temp % 2 != 1 || columns_temp % 2 != 1)
 	{
 		cout << "rows and width need to be odd numbers" << endl;
