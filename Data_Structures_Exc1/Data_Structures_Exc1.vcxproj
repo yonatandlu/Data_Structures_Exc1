@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Maze.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Maze.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Stack.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{ECDF1325-82AC-4C16-9B96-60C856C380CB}</ProjectGuid>
@@ -122,22 +138,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\newExc1\DS_Hw1\Maze.h" />
-    <ClInclude Include="..\..\newExc1\DS_Hw1\Node.h" />
-    <ClInclude Include="..\..\newExc1\DS_Hw1\Queue.h" />
-    <ClInclude Include="..\..\newExc1\DS_Hw1\Square.h" />
-    <ClInclude Include="..\..\newExc1\DS_Hw1\Stack.h" />
-    <ClInclude Include="..\..\newExc1\DS_Hw1\utils.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\newExc1\DS_Hw1\main.cpp" />
-    <ClCompile Include="..\..\newExc1\DS_Hw1\Maze.cpp" />
-    <ClCompile Include="..\..\newExc1\DS_Hw1\Node.cpp" />
-    <ClCompile Include="..\..\newExc1\DS_Hw1\Queue.cpp" />
-    <ClCompile Include="..\..\newExc1\DS_Hw1\Square.cpp" />
-    <ClCompile Include="..\..\newExc1\DS_Hw1\Stack.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -17,7 +17,7 @@ void Stack::MakeEmpty()
 	while (top != NULL)
 	{
 		temp = top;
-		top = top->next;
+		top = top->next;/////
 		delete temp;
 	}
 }
